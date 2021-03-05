@@ -40,7 +40,10 @@ function viewCart() {
 // so it can be arbitrarily long with , and X at $Y until the period.
 function total() {
   for (let i = 0, l = cart.length; i < l; i++) {
-    return 0 + cart[i].itemPrice 
+  return 0 + cart[i].itemPrice 
+  }
+}
+
 
 //  const itemsAndPrices = []
 //  for (let i = 0, l = cart.length; i < l; i++) {
@@ -53,8 +56,6 @@ function total() {
 //  }
 
 //  return totaltotal
-
-}
 
 function removeFromCart(item) {
   // write your code here
