@@ -42,9 +42,6 @@ function total() {
   for (let i = 0, l = cart.length; i < l; i++) {
     return 0 + cart[i].itemPrice 
 
-
-
-
 //  const itemsAndPrices = []
 //  for (let i = 0, l = cart.length; i < l; i++) {
 //    itemsAndPrices.push(Object.values(cart[i]))
