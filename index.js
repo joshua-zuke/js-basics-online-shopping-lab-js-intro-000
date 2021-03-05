@@ -46,7 +46,7 @@ function total() {
   return itemsAndPrices
 
   for (let i = o, l = cart.length; i < l; i++) {
-    itemsAndPrices[i][1]
+    0 + itemsAndPrices[i][1]
   }
 
 
