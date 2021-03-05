@@ -41,9 +41,11 @@ function viewCart() {
 function total() {
   const itemsAndPrices = []
   for (let i = 0, l = cart.length; i < l; i++) {
-    itemsAndPrices.push(Object.values(cart[i]))
+    itemsAndPrices.push(Object.values(cart[i][i]))
   }
   return itemsAndPrices
+  let i = 0
+  total(cart)[]
 
 }
 
