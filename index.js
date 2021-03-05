@@ -49,6 +49,7 @@ function total() {
     let totaltotal = 0 + itemsAndPrices[i][1]
   }
 
+  return totaltotal
 
 
 }
