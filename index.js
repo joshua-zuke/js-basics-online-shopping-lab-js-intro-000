@@ -44,8 +44,12 @@ function total() {
     itemsAndPrices.push(Object.values(cart[i]))
   }
   return itemsAndPrices
-//  let i = 0
-//  total(cart)[]
+
+  for (let i = o, l = cart.length; i < l; i++) {
+    itemsAndPrices[i][1]
+  }
+
+
 
 }
 
