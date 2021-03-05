@@ -39,8 +39,12 @@ function viewCart() {
 // is it possible to do an until/while count is less than cart.length add ", and itemsAndPrices.." to the string?
 // so it can be arbitrarily long with , and X at $Y until the period.
 function total() {
+  let allItemPrices = []
+
   for (let i = 0, l = cart.length; i < l; i++) {
-  return 0 + cart[i].itemPrice 
+    allItemPrices.push(Object.values(cart[i].itemPrice))
+
+//  return 0 + cart[i].itemPrice
   }
 }
 
