@@ -9,21 +9,42 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart(item) {
-  var itemName = item
-  var itemPrice = Math.random() * 10
-  var item = {[itemName]: itemPrice}
+// function createObject(item){
+//  let itemName = item
+//  let itemPrice = Math.floor(Math.random() * 100) +1
+//  var item = {[itemName]: itemPrice}
+//  return item
+// }
 
+function addToCart(item) {
+  let itemName = item
+  let itemPrice = Math.floor(Math.random() * 100) + 1
+  var item = {itemName: item, itemPrice: itemPrice}
   cart.push(item)
   return `${itemName} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length > 0){
+    const itemsAndPrices = []
+    for (let i = 0, l = cart.length; i < l; i++) {
+      itemsAndPrices.push(Object.values(cart[i]))
+    }
+    return `In your cart, you have ${itemsAndPrices[0][0]} at $${itemsAndPrices[0][1]}${cart.length < 2 ? '.' : `, and ${itemsAndPrices[1][0]} at $${itemsAndPrices[1][1]}.`}`
+  } else {
+  return "Your shopping cart is empty."
+  }
 }
 
+// is it possible to do an until/while count is less than cart.length add ", and itemsAndPrices.." to the string?
+// so it can be arbitrarily long with , and X at $Y until the period.
 function total() {
-  // write your code here
+  const itemsAndPrices = []
+  for (let i = 0, l = cart.length; i < l; i++) {
+    itemsAndPrices.push(Object.values(cart[i]))
+  }
+  return itemsAndPrices
+
 }
 
 function removeFromCart(item) {
